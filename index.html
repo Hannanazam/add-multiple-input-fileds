@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+</head>
+<body>
+
+        <button onclick="addaddon()">Add item</button>
+
+        <div id="data">
+            
+        </div>
+
+</body>
+<script>
+function addaddon(){
+            var div = document.createElement("div");
+            div.setAttribute("class" , "col-md-6 mt-3")
+            var label = document.createElement("label");
+            var label1 = document.createTextNode("Addon Name");
+            label.appendChild(label1)
+            var br = document.createElement("br");
+            var br1 = document.createElement("br");
+            var br2 = document.createElement("br");
+            var input = document.createElement("input");
+            input.setAttribute("type" , "text")
+            input.setAttribute("value" , "")
+            input.setAttribute("class" , "form-control")
+
+            var div1 = document.createElement("div");
+            div1.setAttribute("class" , "col-md-6")
+            var br1 = document.createElement("br");
+            var br11 = document.createElement("br");
+            var input1 = document.createElement("input");
+            input1.setAttribute("type" , "file")
+            input1.setAttribute("name" , "image")
+            input1.setAttribute("class" , "form-control mt-40")
+
+
+            div.appendChild(br2);
+            div.appendChild(label);
+            div.appendChild(br);
+            div.appendChild(input);
+            div.appendChild(br1);
+            data.appendChild(div);
+
+            div1.appendChild(br1);
+            div1.appendChild(input1);
+            div1.appendChild(br11);
+            data.appendChild(div1);
+}
+</script>
+</html>

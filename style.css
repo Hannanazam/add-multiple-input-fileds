@@ -1,0 +1,120 @@
+body{
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    background-color: rgb(41, 70, 150);
+    margin-top: 0px;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.main-container{
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+   
+    margin-top: 50px;
+    overflow: auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.child1 input{
+    padding: 5px;
+    width: 75%;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: rgb(238, 236, 236);
+    font-size: 13px;
+    outline: none;
+}
+.child1 input:focus{
+    border-bottom:2px solid rgb(41, 70, 150);
+    position: relative;
+    padding: 10px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.child1 button{
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(41, 70, 150);
+    border: 1px solid rgb(41, 70, 150);
+    /* border: none; */
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.child1 button:hover{
+    color: rgb(41, 70, 150);
+    background-color: white;
+    transition: 0.5s;
+}
+.child2 ul{
+    list-style:decimal;
+    text-align: right; 
+    margin-top: 30px;   
+}
+.child2{
+    margin:0px auto;
+    margin-right: 5px;
+    display: absolute;
+}
+
+
+.child2 ul li button{
+    padding: 2px 3px;
+    color: white;
+    background-color:rgb(41, 70, 150);
+    border: none;
+    display: inline-block;
+    width: 30%;
+    font-size: 12px;
+    position: relative;
+    align-items: flex-end;
+    
+    
+}
+.child2 ul li{
+    border-bottom: 1px solid rgb(41, 70, 150);
+    text-align: left !important;
+    padding: 5px;
+    width: 230px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.btnnnn{
+  text-align: right;
+}
+
+
+@media (max-width:765px){
+
+
+
+    .main-container{
+         margin-top: 0px;
+         top: 0px;
+         height: 100%;
+        border-radius:none;
+        box-shadow:none;
+        overflow:visible;
+    }
+
+  .main-container  h1{
+        border: none;
+        border-radius: 0;
+        margin-left: -21.44px;
+        margin-right: -20.44px;
+    }
+}
